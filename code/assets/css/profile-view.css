@@ -1,0 +1,342 @@
+/* assets/css/profile-view.css */
+
+#studentModal .modal-content,
+#facultyModal .modal-content {
+    padding: 0;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#studentModal .close,
+#facultyModal .close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.25rem;
+    color: #666;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#studentModal .close:hover,
+#facultyModal .close:hover {
+    background: #ef4444;
+    color: white;
+}
+
+/* ========================================
+   PROFILE HEADER
+   ======================================== */
+
+.modal-student-profile .profile-header,
+.faculty-modal-header {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+}
+
+.faculty-modal-header {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.modal-student-profile .profile-avatar,
+.faculty-modal-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.modal-student-profile .profile-info,
+.faculty-modal-info {
+    flex: 1;
+}
+
+.modal-student-profile .profile-info h2,
+.faculty-modal-info h2 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.875rem;
+}
+
+.modal-student-profile .profile-degree,
+.modal-student-profile .profile-university,
+.faculty-modal-title,
+.faculty-modal-office {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0.25rem 0;
+}
+
+.modal-student-profile .profile-cgpa {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.375rem 1rem;
+    border-radius: 1rem;
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+}
+
+/* ========================================
+   CONTACT SECTION
+   ======================================== */
+
+.modal-student-profile .profile-contact,
+.faculty-modal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1.5rem 2rem;
+    background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-student-profile .contact-btn,
+.modal-social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: white;
+    color: #4b5563;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s;
+}
+
+.modal-student-profile .contact-btn:hover,
+.modal-social-link:hover {
+    background: #6366f1;
+    color: white;
+    border-color: #6366f1;
+}
+
+.modal-social-link.linkedin:hover {
+    background: #0077b5;
+    border-color: #0077b5;
+}
+
+.modal-social-link.github:hover {
+    background: #333;
+    border-color: #333;
+}
+
+/* ========================================
+   CONTENT SECTIONS
+   ======================================== */
+
+.modal-student-profile .profile-section,
+.faculty-modal-sections .modal-section {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-student-profile .profile-section:last-child,
+.faculty-modal-sections .modal-section:last-child {
+    border-bottom: none;
+}
+
+.modal-student-profile .profile-section h3,
+.faculty-modal-sections .modal-section h3 {
+    color: #374151;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+/* Skills */
+.modal-student-profile .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.modal-student-profile .skill-tag {
+    padding: 0.375rem 0.875rem;
+    background: #e0e7ff;
+    color: #4338ca;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+}
+
+/* Experience/Achievement/Publication Items */
+.modal-student-profile .experience-item,
+.modal-student-profile .achievement-item,
+.modal-student-profile .publication-item,
+.faculty-modal-research {
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+    border-left: 3px solid #6366f1;
+}
+
+.faculty-modal-research {
+    border-left-color: #3b82f6;
+}
+
+.modal-student-profile .experience-item h4,
+.modal-student-profile .achievement-item h4,
+.modal-student-profile .publication-item h4,
+.research-post-title {
+    color: #111827;
+    margin-bottom: 0.375rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.modal-student-profile .company,
+.modal-student-profile .journal {
+    color: #6366f1;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.modal-student-profile .duration,
+.modal-student-profile .date,
+.modal-student-profile .year {
+    color: #6b7280;
+    font-size: 0.813rem;
+}
+
+/* Achievement Types */
+.modal-student-profile .achievement-type {
+    display: inline-block;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-type.certification {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.achievement-type.award {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.achievement-type.achievement {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+/* Faculty Research Posts */
+.research-post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0.5rem 0;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.research-post-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+}
+
+.research-post-description {
+    color: #4b5563;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 0.75rem 0;
+}
+
+/* Publication Link */
+.modal-student-profile .publication-link {
+    color: #6366f1;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.modal-student-profile .publication-link:hover {
+    text-decoration: underline;
+}
+
+/* ========================================
+   LOADING & ERROR STATES
+   ======================================== */
+
+.loading,
+.error {
+    text-align: center;
+    padding: 3rem;
+    color: #6b7280;
+}
+
+.error {
+    color: #ef4444;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    #studentModal .modal-content,
+    #facultyModal .modal-content {
+        width: 100%;
+        height: 100%;
+        max-height: 100vh;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .modal-student-profile .profile-header,
+    .faculty-modal-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .modal-student-profile .profile-avatar,
+    .faculty-modal-avatar {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+    }
+
+    .modal-student-profile .profile-contact,
+    .faculty-modal-links {
+        padding: 1rem;
+    }
+
+    .modal-student-profile .contact-btn,
+    .modal-social-link {
+        flex: 1;
+        justify-content: center;
+        min-width: calc(50% - 0.375rem);
+    }
+
+    .modal-student-profile .profile-section,
+    .faculty-modal-sections .modal-section {
+        padding: 1rem;
+    }
+
+    #studentModal .close,
+    #facultyModal .close {
+        right: 1rem;
+        top: 1rem;
+    }
+}
