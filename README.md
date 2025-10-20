@@ -114,11 +114,6 @@ Before you begin, ensure you have the following installed:
 - **Capabilities**: Apply for research, manage profile, use AI assistant
 - **Access Path**: `/student/*`
 
-### Organizer
-- **Registration**: Requires admin verification
-- **Capabilities**: Create and manage events
-- **Access Path**: `/organizer/*`
-
 ##  Project Structure
 
 ```
